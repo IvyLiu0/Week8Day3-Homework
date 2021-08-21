@@ -13,9 +13,9 @@
 
 </head>
 <body>
-    <aside id="leftside"></aside>
-    <aside id="rightside"></aside>
-    <div id="container">
+    <aside class="container" id="leftside"></aside>
+    <aside class="container" id="rightside"></aside>
+    <div id="container" class="container">
         <div id= "component1">
             <mycomponent1></mycomponent1>
         </div>
@@ -37,16 +37,16 @@
 
         <main>
         
-        <aside id="photos">
-            <img v-bind:src="chili" alt="White Chicken Chili" width="180">
-        </aside>
-        <div id = "component2">
-            <mycomponent2></mycomponent2>
-        </div>        
+            <aside id="photos">
+                <img src="images/chili.jpg" alt="White Chicken Chili" width="180">
+            </aside>
+            <div id = "component2">
+                <mycomponent2></mycomponent2>
+            </div>            
         
-        <!-- blog section -->
-        <section id="blogposts">
-            <div class="post">
+        <!-- blog -->
+        <section id="blogposts" class="row">
+            <div class="post col-lg-11">
                     <img v-on:click="displayInfo" v-bind:src="obj.profile" alt="profile image" width="40px" height="30px">
                     {{ obj.author }} — 
                     {{ obj.date }}
@@ -68,7 +68,7 @@
             </div>
             
 
-            <div class="post">
+            <div class="post col-lg-11">
                 <img v-on:click="displayInfo1" v-bind:src="obj1.profile" alt="profile image" width="40px" height="30px">
                 {{ obj1.author }} — 
                 {{ obj1.date }}
@@ -89,7 +89,7 @@
                 </div>
         </div>
 
-        <div class="post">
+        <div class="post col-lg-11">
             <img v-on:click="displayInfo2" v-bind:src="obj2.profile" alt="profile image" width="40px" height="30px">
             {{ obj2.author }} — 
             {{ obj2.date }}
@@ -110,7 +110,7 @@
             </div>
     </div>
 
-        <div class="post">
+        <div class="post col-lg-11">
             <img v-on:click="displayInfo3" v-bind:src="obj3.profile" alt="profile image" width="40px" height="30px">
             {{ obj3.author }} — 
             {{ obj3.date }}
