@@ -18,17 +18,22 @@
     #container {
         background-color:rgba(255, 255, 255, 0.85);
         position: absolute;
-        top: 15%;
+        top: 10%;
         left: 15%;
         min-width: 1100px;
-        min-height: 1050px;
+        min-height: 1080px;
         border-radius: 0.7em;
     }
+
+    #navigation{
+        background-color: rgb(77, 192, 154);
+    }
+
     header {
-        height: 50px;
+        height: 80px;
         background-color:rgba(231, 229, 229, 0.5);
         font-size: 2.75em;
-        padding:0.5em;
+        padding:0.15em 0 0.5em 0.5em;
         color:rgb(216, 150, 7);
     }
     header span {
@@ -41,23 +46,26 @@
         position: absolute;
         left: 20%;
         top: 30px;
-        margin: 25px 0 200px 50px;
+        margin: 25px 0 200px 70px;
         color:rgb(60, 190, 160);
         text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        font-weight: bold;
     }
     main #photos img {
-        margin: 0.75em;
+        margin: 1.5em;
         border: 0.85em solid rgb(255, 255, 255);
     }
     section#blogposts {
         position: absolute;
         left: 20%;
-        top: 70px;
+        top: 60px;
         padding: 50px;
     }
     main .post {
         margin: 25px;
-        padding: 25px;
+        padding: 25px 25px 10px 25px;
         border: 2px solid rgba(83, 78, 58, 0.6);
         border-radius: 0.5em;
     }
@@ -72,6 +80,7 @@
         text-align: left;
         /* z-index: 2; */
         position: absolute;
+        top:15%
     }
 
     .modal1{
@@ -100,6 +109,9 @@
         top: 40%;
     }
     
+    .message{
+        margin-top: 10px;
+    }
 
     .foodie{
         font-size: small;
@@ -122,4 +134,5 @@
         width: 100%;
         text-align: center;
         font-size: 0.85em;
+        padding-top: 20px;
     }
